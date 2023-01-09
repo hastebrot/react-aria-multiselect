@@ -1,5 +1,7 @@
 # react-aria-multiselect
 
+![demo-multiselect](./docs/demo-multiselect.png)
+
 Developer usage:
 
 - `$ pnpm install`
@@ -10,3 +12,13 @@ Based on a codesandbox by Roman Veselý (crazko):
 
 - https://github.com/adobe/react-spectrum/issues/2140#issuecomment-1013452232
 - https://codesandbox.io/s/spectrum-multiselect-9be866-9be866
+
+Compatible with React Spectrum release from 16 December 2022.
+
+- https://react-spectrum.adobe.com/releases/2022-12-16.html
+
+This code is incompatible with `React.Strict`. Work-around: Remove react strict-mode.
+
+- work-around: https://github.com/adobe/react-spectrum/issues/3515
+- fixed in: https://github.com/adobe/react-spectrum/pull/3878
+- also fixed in: https://github.com/adobe/react-spectrum/pull/3865
