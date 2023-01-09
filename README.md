@@ -22,3 +22,21 @@ This code is incompatible with `React.Strict`. Work-around: Remove react strict-
 - work-around: https://github.com/adobe/react-spectrum/issues/3515
 - fixed in: https://github.com/adobe/react-spectrum/pull/3878
 - also fixed in: https://github.com/adobe/react-spectrum/pull/3865
+
+Lines of code per source file:
+
+```
+❯ wc -l $(find src -type f)
+      12 src/index.tsx
+      80 src/App.tsx
+      62 src/styles.css
+     201 src/select.css
+     110 src/Select/SelectListBox.tsx
+      79 src/Select/SelectPopover.tsx
+     213 src/Select/useMultiSelect.ts
+      69 src/Select/useMultiSelectListState.ts
+      94 src/Select/useMultiSelectState.ts
+     258 src/Select/Select.tsx
+       1 src/react-app-env.d.ts
+    1179 total
+```
