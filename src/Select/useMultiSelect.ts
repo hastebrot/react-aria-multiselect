@@ -184,10 +184,12 @@ export function useMultiSelect<T>(
     },
     menuProps: {
       ...menuProps,
+      items: menuProps.items as Iterable<T>,
       disallowEmptySelection,
       autoFocus: state.focusStrategy || true,
       shouldSelectOnPressUp: true,
       shouldFocusOnHover: true,
+      onFocus: props.onFocus,
       onBlur: (e) => {
         if (e.currentTarget.contains(e.relatedTarget as Node)) {
           return;
@@ -198,7 +200,6 @@ export function useMultiSelect<T>(
         }
         state.setFocused(false);
       },
-      onFocus: menuProps.onFocus as never,
       "aria-labelledby": [
         fieldProps["aria-labelledby"],
         triggerProps["aria-label"] && !fieldProps["aria-labelledby"]

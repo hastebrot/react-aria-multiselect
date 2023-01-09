@@ -74,13 +74,6 @@ export default function App() {
             isClearable
           ></Select>
         </div>
-        <p>
-          <small>
-            Note: there's a bug. Popover is closed immediately after toggling
-            when no item is selected. It is not present in our original
-            implementation. Keyboard interaction works fine though.
-          </small>
-        </p>
       </div>
     </div>
   );
